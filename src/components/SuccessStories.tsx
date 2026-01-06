@@ -1,6 +1,5 @@
-import knowledgeIcon from "@/assets/knowledge.svg";
-import supportIcon from "@/assets/support.svg";
-import employmentIcon from "@/assets/employment.svg";
+import { motion } from "framer-motion";
+import { CheckCircle } from "lucide-react";
 
 const stories = [
   {
@@ -10,7 +9,6 @@ const stories = [
     iconBg: "bg-primary",
     titleColor: "text-primary",
     title: "Knowledge Empowers",
-    icon: knowledgeIcon,
     description:
       "A client facing benefit sanctions learned their rights and options through our advice service, enabling them to successfully challenge the decision.",
     highlight: "Appeal won, benefits restored",
@@ -22,7 +20,6 @@ const stories = [
     iconBg: "bg-coral",
     titleColor: "text-coral",
     title: "Support That Made a Difference",
-    icon: supportIcon,
     description:
       "A single parent navigating the benefits system found clarity and confidence through our advocacy, ensuring their children had the support they needed.",
     highlight: "£450/month secured",
@@ -34,7 +31,6 @@ const stories = [
     iconBg: "bg-lavender",
     titleColor: "text-lavender",
     title: "From Uncertainty to Employment",
-    icon: employmentIcon,
     description:
       "With our employment support and guidance, a young person new to the UK found their first job and began building their future in their new community.",
     highlight: "Full-time position achieved",
@@ -43,44 +39,52 @@ const stories = [
 
 const SuccessStories = () => {
   return (
-    <section className="w-full px-20 py-20 flex flex-col items-center gap-16">
-      <div className="flex flex-col items-center gap-3 max-w-[800px]">
+    <section className="w-full px-4 sm:px-10 lg:px-20 py-10 sm:py-16 lg:py-20 flex flex-col items-center gap-8 sm:gap-12 lg:gap-16">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+        className="flex flex-col items-center gap-2 sm:gap-3 max-w-[800px]"
+      >
         <h2
-          className="text-center text-primary text-[48px] font-black leading-[67.2px]"
+          className="text-center text-primary text-[24px] sm:text-[36px] lg:text-[48px] font-black leading-[1.2] lg:leading-[67.2px]"
           style={{ fontFamily: "Avenir, sans-serif" }}
         >
           Stay Informed: Success stories
         </h2>
         <p
-          className="max-w-[642px] text-center text-grey-1000 text-[18px] font-medium leading-[27px]"
+          className="max-w-[642px] text-center text-grey-1000 text-[15px] sm:text-[18px] font-medium leading-[1.6] sm:leading-[27px] px-2 sm:px-0"
           style={{ fontFamily: "Avenir, sans-serif" }}
         >
           Here are a few examples of how advice and support can help people
           understand their options and move forward.
         </p>
-      </div>
+      </motion.div>
 
-      <div className="w-full flex flex-col md:flex-row gap-8">
-        {stories.map((story) => (
-          <div
+      <div className="w-full flex flex-col lg:flex-row gap-4 sm:gap-6 lg:gap-8">
+        {stories.map((story, index) => (
+          <motion.div
             key={story.title}
-            className="flex-1 bg-white rounded-[32px] shadow-[0px_4px_6px_-1px_rgba(0,0,0,0.15)] p-8 flex flex-col gap-6"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+            className="flex-1 bg-white rounded-[20px] sm:rounded-[32px] shadow-[0px_4px_20px_-4px_rgba(0,0,0,0.1)] p-5 sm:p-6 lg:p-8 flex flex-col gap-4 sm:gap-5 lg:gap-6 hover:shadow-[0px_8px_30px_-4px_rgba(0,0,0,0.15)] transition-shadow duration-300"
           >
-            <div className="flex items-start justify-between">
+            <div className="flex items-center justify-between gap-3">
               <div
-                className={`w-16 h-16 ${story.iconBg} rounded-full flex items-center justify-center`}
+                className={`w-11 h-11 sm:w-14 sm:h-14 lg:w-16 lg:h-16 ${story.iconBg} rounded-full flex items-center justify-center shadow-sm`}
               >
-                <img 
-                  src={story.icon} 
-                  alt={story.title} 
-                  className="w-8 h-8 object-contain"
-                />
+                <div className="w-5 h-5 sm:w-7 sm:h-7 lg:w-8 lg:h-8 relative">
+                  <div className="absolute inset-[2px] sm:inset-[4px] border-2 sm:border-[3px] border-white rounded-sm" />
+                </div>
               </div>
               <div
-                className={`h-7 px-4 rounded-full ${story.tagBg} flex items-center`}
+                className={`h-7 sm:h-7 px-3 sm:px-4 rounded-full ${story.tagBg} flex items-center`}
               >
                 <span
-                  className={`text-[14px] leading-5 font-normal ${story.tagText}`}
+                  className={`text-[12px] sm:text-[14px] leading-5 font-semibold ${story.tagText}`}
                   style={{ fontFamily: "Avenir, sans-serif" }}
                 >
                   {story.tag}
@@ -88,33 +92,31 @@ const SuccessStories = () => {
               </div>
             </div>
 
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 sm:gap-2">
               <h3
-                className={`${story.titleColor} text-[20px] font-black leading-[28px]`}
+                className={`${story.titleColor} text-[17px] sm:text-[20px] font-black leading-[1.3] sm:leading-[28px]`}
                 style={{ fontFamily: "Avenir, sans-serif" }}
               >
                 {story.title}
               </h3>
               <p
-                className="text-grey-1000 text-[18px] font-medium leading-[27px]"
+                className="text-grey-1000 text-[14px] sm:text-[18px] font-medium leading-[1.6] sm:leading-[27px]"
                 style={{ fontFamily: "Avenir, sans-serif" }}
               >
                 {story.description}
               </p>
             </div>
 
-            <div className="pt-4 border-t border-[#CCCCCC] flex items-center gap-2">
-              <div className="w-4 h-4 relative">
-                <div className="absolute inset-[3px] rounded border-[1.3px]" />
-              </div>
+            <div className="mt-auto pt-4 sm:pt-4 border-t border-grey-200 flex items-center gap-2.5">
+              <CheckCircle className={`w-5 h-5 ${story.titleColor}`} />
               <span
-                className="text-grey-1000 text-[16px] font-medium leading-6"
+                className="text-grey-1000 text-[14px] sm:text-[16px] font-semibold leading-6"
                 style={{ fontFamily: "Avenir, sans-serif" }}
               >
                 {story.highlight}
               </span>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>
@@ -122,5 +124,3 @@ const SuccessStories = () => {
 };
 
 export default SuccessStories;
-
-

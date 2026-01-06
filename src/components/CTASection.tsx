@@ -6,7 +6,7 @@ import purpleBg from "@/assets/purplebg.svg";
 const CTASection = () => {
   return (
     <section className="w-full flex justify-center pt-8 sm:pt-12 lg:pt-16 pb-16 sm:pb-24 lg:pb-32 px-4 sm:px-10 lg:px-4">
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -30,8 +30,7 @@ const CTASection = () => {
               className="w-full text-center text-white text-[22px] sm:text-[32px] lg:text-[48px] font-black leading-[1.25] sm:leading-tight lg:leading-[67.2px]"
               style={{ fontFamily: "Avenir, sans-serif" }}
             >
-              Looking for advice?{" "}
-              <br className="hidden lg:block" />
+              Looking for advice? <br className="hidden lg:block" />
               We're here to support you.
             </motion.h2>
             <motion.p
@@ -53,9 +52,9 @@ const CTASection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: 0.4 }}
           >
-            <Button 
-              variant="white" 
-              size="default" 
+            <Button
+              variant="white"
+              size="default"
               className="h-[50px] sm:h-[52px] lg:h-[59px] px-6 sm:px-6 rounded-lg group text-[15px] sm:text-lg shadow-lg hover:shadow-xl transition-all duration-300 active:scale-[0.98]"
             >
               <span>Get Free Advice</span>
