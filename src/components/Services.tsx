@@ -1,6 +1,6 @@
 import { ArrowRight, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import servicesBg from "@/assets/services-bg.svg";
+import servicesBg from "@/assets/services-bg.svg?url";
 import impactWave from "@/assets/impact-wave.svg";
 import welfareAdviceIcon from "@/assets/WelflareAdvice.svg";
 import housingAdviceIcon from "@/assets/HousingAdvice.svg";

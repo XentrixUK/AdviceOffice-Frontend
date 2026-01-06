@@ -1,5 +1,5 @@
 import { MapPin, Phone, Mail, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
-import footerBg from "@/assets/footer-bg.svg";
+import footerBg from "../assets/footer-bg.svg?url";
 
 const quickLinks = ["Home", "About", "Services", "Training", "Partners", "Resources"];
 const serviceLinks = ["Welfare Benefits", "Housing Support", "Integration", "Education", "Interpreting"];

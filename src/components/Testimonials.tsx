@@ -1,8 +1,8 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import testimonialsBg from "@/assets/testimonials-bg.svg";
-import TestimonialsWave from "@/assets/testimonials-wave.svg";
+import testimonialsBg from "../assets/testimonials-bg.svg?url";
+import TestimonialsWave from "../assets/testimonials-wave.svg";
 
 const testimonials = [
   {
