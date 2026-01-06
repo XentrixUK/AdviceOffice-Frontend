@@ -1,5 +1,8 @@
 import { motion } from "framer-motion";
 import { CheckCircle } from "lucide-react";
+import knowledgeIcon from "../assets/knowledge.svg";
+import supportIcon from "../assets/support.svg";
+import employmentIcon from "../assets/employment.svg";
 
 const stories = [
   {
@@ -12,6 +15,7 @@ const stories = [
     description:
       "A client facing benefit sanctions learned their rights and options through our advice service, enabling them to successfully challenge the decision.",
     highlight: "Appeal won, benefits restored",
+    icon: knowledgeIcon,
   },
   {
     tag: "Benefits Support",
@@ -23,6 +27,7 @@ const stories = [
     description:
       "A single parent navigating the benefits system found clarity and confidence through our advocacy, ensuring their children had the support they needed.",
     highlight: "£450/month secured",
+    icon: supportIcon,
   },
   {
     tag: "Employment",
@@ -34,13 +39,14 @@ const stories = [
     description:
       "With our employment support and guidance, a young person new to the UK found their first job and began building their future in their new community.",
     highlight: "Full-time position achieved",
+    icon: employmentIcon,
   },
 ];
 
 const SuccessStories = () => {
   return (
     <section className="w-full px-4 sm:px-10 lg:px-20 py-10 sm:py-16 lg:py-20 flex flex-col items-center gap-8 sm:gap-12 lg:gap-16">
-      <motion.div
+      <motion.div 
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -76,9 +82,11 @@ const SuccessStories = () => {
               <div
                 className={`w-11 h-11 sm:w-14 sm:h-14 lg:w-16 lg:h-16 ${story.iconBg} rounded-full flex items-center justify-center shadow-sm`}
               >
-                <div className="w-5 h-5 sm:w-7 sm:h-7 lg:w-8 lg:h-8 relative">
-                  <div className="absolute inset-[2px] sm:inset-[4px] border-2 sm:border-[3px] border-white rounded-sm" />
-                </div>
+                <img 
+                  src={story.icon} 
+                  alt={story.tag}
+                  className="w-5 h-5 sm:w-7 sm:h-7 lg:w-8 lg:h-8"
+                />
               </div>
               <div
                 className={`h-7 sm:h-7 px-3 sm:px-4 rounded-full ${story.tagBg} flex items-center`}
