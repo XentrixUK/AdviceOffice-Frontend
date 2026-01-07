@@ -1,10 +1,12 @@
 import { ArrowRight, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
 import servicesBg from "@/assets/services-bg.svg?url";
 import impactWave from "@/assets/impact-wave.svg";
 import welfareAdviceIcon from "@/assets/WelflareAdvice.svg";
 import housingAdviceIcon from "@/assets/HousingAdvice.svg";
 import integrateSupportIcon from "@/assets/IntegrateSupport.svg";
+import servicesArrow from "@/assets/services-arrow.svg";
 
 const services = [
   {
@@ -40,30 +42,57 @@ const Services = () => {
       }}
     >
       <div className="max-w-[1280px] mx-auto flex flex-col items-center gap-8 sm:gap-12 lg:gap-16">
-        <div className="flex flex-col items-center gap-2 sm:gap-3">
+        <motion.div 
+          className="flex flex-col items-center gap-2 sm:gap-3 relative"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+        >
+          <motion.img 
+            src={servicesArrow} 
+            alt="" 
+            className="hidden lg:block absolute -right-[180px] -top-[20px] w-[85px] h-[112px]"
+            initial={{ opacity: 0, rotate: -10 }}
+            whileInView={{ opacity: 1, rotate: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+          />
           <h2 className="text-primary text-[28px] sm:text-[36px] lg:text-[48px] font-bold leading-[1.4] text-center">
             Our Services
           </h2>
           <p className="text-grey-1000 text-[16px] sm:text-[17px] lg:text-[18px] font-medium leading-[1.5] text-center max-w-[320px] sm:max-w-none">
             Getting the support you need, step by step
           </p>
-        </div>
+        </motion.div>
 
         <div className="w-full flex items-center justify-center lg:justify-between gap-4">
-          <button
+          <motion.button
             className="hidden lg:flex flex-shrink-0 w-[30px] h-[30px] bg-grey-50 rounded-full items-center justify-center rotate-180"
             aria-label="Previous"
+            whileHover={{ scale: 1.1, backgroundColor: "rgba(0,0,0,0.05)" }}
+            whileTap={{ scale: 0.95 }}
+            transition={{ duration: 0.2 }}
           >
             <ChevronRight className="w-5 h-5 text-grey-600" />
-          </button>
+          </motion.button>
 
           <div className="w-full lg:w-[1174px] flex flex-col sm:flex-row sm:flex-wrap lg:flex-nowrap items-center sm:items-stretch justify-center gap-6 sm:gap-6 lg:gap-8">
-            {services.map((service) => (
-              <div
+            {services.map((service, index) => (
+              <motion.div
                 key={service.title}
                 className={`w-full sm:w-[calc(50%-12px)] lg:w-[370px] ${service.bgColor} rounded-xl pt-10 sm:pt-12 lg:pt-[72px] pb-8 sm:pb-10 lg:pb-12 px-5 sm:px-6 flex flex-col items-center gap-6 sm:gap-8 lg:gap-10 shadow-[0px_4px_10px_rgba(0,0,0,0.16)]`}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.5, delay: index * 0.15, ease: "easeOut" }}
+                whileHover={{ y: -8, boxShadow: "0px 12px 24px rgba(0,0,0,0.25)" }}
               >
-                <div className="w-[80px] h-[80px] sm:w-[90px] sm:h-[90px] lg:w-[100px] lg:h-[100px] bg-white rounded-full flex items-center justify-center relative">
+                <motion.div 
+                  className="w-[80px] h-[80px] sm:w-[90px] sm:h-[90px] lg:w-[100px] lg:h-[100px] bg-white rounded-full flex items-center justify-center relative"
+                  whileHover={{ scale: 1.05, rotate: 5 }}
+                  transition={{ duration: 0.3 }}
+                >
                   <img 
                     src={service.icon} 
                     alt={service.title} 
@@ -73,7 +102,7 @@ const Services = () => {
                       "w-[37px] h-[45px] sm:w-[43px] sm:h-[52px] lg:w-[49px] lg:h-[60px]"
                     }`}
                   />
-                </div>
+                </motion.div>
 
                 <div className="flex flex-col items-center gap-4 sm:gap-5">
                   <div className="flex flex-col items-center gap-3 sm:gap-4">
@@ -89,27 +118,36 @@ const Services = () => {
                     <ArrowRight className="w-6 h-6 transition-transform group-hover:translate-x-1 text-primary" />
                   </Button>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
 
-          <button
+          <motion.button
             className="hidden lg:flex flex-shrink-0 w-[30px] h-[30px] bg-grey-50 rounded-full items-center justify-center"
             aria-label="Next"
+            whileHover={{ scale: 1.1, backgroundColor: "rgba(0,0,0,0.05)" }}
+            whileTap={{ scale: 0.95 }}
+            transition={{ duration: 0.2 }}
           >
             <ChevronRight className="w-5 h-5 text-grey-600" />
-          </button>
+          </motion.button>
         </div>
       </div>
       
-      <div className="w-full absolute bottom-0 left-0 right-0">
+      <motion.div 
+        className="w-full absolute bottom-0 left-0 right-0"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
+      >
         <img 
           src={impactWave} 
           alt="" 
           className="w-full h-auto block"
           style={{ display: 'block' }}
         />
-      </div>
+      </motion.div>
     </section>
   );
 };

@@ -1,5 +1,5 @@
 import { MapPin, Phone, Mail, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
-import footerBg from "../assets/footer-bg.svg?url";
+import footerBg from "@/assets/footer-bg.png";
 
 const quickLinks = ["Home", "About", "Services", "Training", "Partners", "Resources"];
 const serviceLinks = ["Welfare Benefits", "Housing Support", "Integration", "Education", "Interpreting"];
@@ -7,7 +7,7 @@ const serviceLinks = ["Welfare Benefits", "Housing Support", "Integration", "Edu
 const Footer = () => {
   return (
     <footer
-      className="w-full px-6 py-12 md:px-12 md:py-16 lg:px-20 lg:py-20"
+      className="w-full px-6 pt-24 pb-12 md:px-12 md:pt-28 md:pb-16 lg:px-20 lg:pt-32 lg:pb-20"
       style={{
         backgroundImage: `url(${footerBg})`,
         backgroundSize: "cover",

@@ -1,13 +1,14 @@
 import { motion } from "framer-motion";
 import { CheckCircle } from "lucide-react";
-import knowledgeIcon from "../assets/knowledge.svg";
-import supportIcon from "../assets/support.svg";
-import employmentIcon from "../assets/employment.svg";
+import knowledgeIcon from "@/assets/knowledge.svg";
+import supportIcon from "@/assets/support.svg";
+import employmentIcon from "@/assets/employment.svg";
+import storiesArrow from "@/assets/stories-arrow.svg";
 
 const stories = [
   {
     tag: "Welfare Rights",
-    tagBg: "bg-primary-50",
+    tagBg: "bg-primary/10",
     tagText: "text-primary",
     iconBg: "bg-primary",
     titleColor: "text-primary",
@@ -19,7 +20,7 @@ const stories = [
   },
   {
     tag: "Benefits Support",
-    tagBg: "bg-coral-50",
+    tagBg: "bg-coral/10",
     tagText: "text-coral",
     iconBg: "bg-coral",
     titleColor: "text-coral",
@@ -31,7 +32,7 @@ const stories = [
   },
   {
     tag: "Employment",
-    tagBg: "bg-lavender-50",
+    tagBg: "bg-lavender/10",
     tagText: "text-lavender",
     iconBg: "bg-lavender",
     titleColor: "text-lavender",
@@ -45,8 +46,34 @@ const stories = [
 
 const SuccessStories = () => {
   return (
-    <section className="w-full px-4 sm:px-10 lg:px-20 py-10 sm:py-16 lg:py-20 flex flex-col items-center gap-8 sm:gap-12 lg:gap-16">
-      <motion.div 
+    <section
+      className="
+    w-full
+    px-4 sm:px-10 lg:px-20
+    pt-10 sm:pt-16
+    pb-20 sm:pb-24 lg:pb-28
+    flex flex-col items-center
+    gap-8 sm:gap-12 lg:gap-16
+    relative
+  "
+    >
+      <motion.img
+        src={storiesArrow}
+        alt=""
+        className="
+    hidden lg:block absolute
+    right-[80px]
+    bottom-[-40px]
+    w-[130px] h-[150px]
+    pointer-events-none
+  "
+        initial={{ opacity: 0, y: 20, rotate: 60 }}
+        whileInView={{ opacity: 1, y: 0, rotate: 60 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0.3 }}
+      />
+
+      <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -82,8 +109,8 @@ const SuccessStories = () => {
               <div
                 className={`w-11 h-11 sm:w-14 sm:h-14 lg:w-16 lg:h-16 ${story.iconBg} rounded-full flex items-center justify-center shadow-sm`}
               >
-                <img 
-                  src={story.icon} 
+                <img
+                  src={story.icon}
                   alt={story.tag}
                   className="w-5 h-5 sm:w-7 sm:h-7 lg:w-8 lg:h-8"
                 />
