@@ -2,7 +2,7 @@ import { ArrowRight, ChevronRight, ChevronLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
-import servicesBg from "@/assets/services-bg.svg?url";
+import servicesBg from "@/assets/services-bg.png";
 import impactWave from "@/assets/impact-wave.svg";
 import welfareAdviceIcon from "@/assets/WelflareAdvice.svg";
 import housingAdviceIcon from "@/assets/HousingAdvice.svg";
