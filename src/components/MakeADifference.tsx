@@ -11,7 +11,7 @@ const MakeADifference = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-center text-primary text-[26px] sm:text-4xl lg:text-5xl font-black leading-[1.2] sm:leading-tight"
+          className="text-center text-primary text-[28px] leading-[1.3] sm:text-[36px] sm:leading-[1.35] lg:text-[56px] lg:leading-[78.4px] font-bold"
           style={{ fontFamily: "Avenir, sans-serif" }}
         >
           Make a Difference Today
@@ -22,7 +22,7 @@ const MakeADifference = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="max-w-[642px] text-center text-[#3D3D3D] text-[15px] sm:text-lg font-medium leading-[1.6] sm:leading-relaxed px-1 sm:px-0"
+          className="max-w-[642px] text-center text-[#3D3D3D] text-[15px] sm:text-lg font-normal leading-[1.6] sm:leading-relaxed px-1 sm:px-0"
           style={{ fontFamily: "Avenir, sans-serif" }}
         >
           Your support helps us provide free, confidential advice on housing,
@@ -50,7 +50,7 @@ const MakeADifference = () => {
           </Button>
           <Button
             variant="outline"
-            className="w-full sm:w-auto border-2 border-primary text-primary hover:bg-primary hover:text-white rounded-full px-5 sm:px-6 h-[52px] sm:h-[57px] text-[15px] sm:text-lg font-semibold shadow-sm active:scale-[0.98] transition-all duration-200"
+            className="w-full sm:w-auto border-2 border-lavender text-lavender hover:bg-lavender hover:text-white rounded-full px-5 sm:px-6 h-[52px] sm:h-[57px] text-[15px] sm:text-lg font-semibold shadow-sm active:scale-[0.98] transition-all duration-200"
           >
             Fundraise with us
           </Button>

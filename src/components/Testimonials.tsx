@@ -73,14 +73,14 @@ const Testimonials = () => {
       }}
     >
       <div className="max-w-[1280px] mx-auto flex flex-col items-center gap-8 sm:gap-12 lg:gap-16 relative z-10">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
           className="text-center flex flex-col gap-2 sm:gap-3"
         >
-          <h2 className="text-white text-[24px] sm:text-[36px] lg:text-[48px] font-black leading-[1.2] lg:leading-[67.2px]">
+          <h2 className="text-white text-[28px] leading-[1.3] sm:text-[36px] sm:leading-[1.35] lg:text-[56px] lg:leading-[78.4px] font-bold">
             What Our Clients Say
           </h2>
           <p className="text-white/90 text-[15px] sm:text-lg font-medium leading-relaxed lg:leading-[27px]">
@@ -133,7 +133,7 @@ const Testimonials = () => {
             </div>
 
             <AnimatePresence mode="wait">
-              <motion.div 
+              <motion.div
                 key={activeIndex}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -171,9 +171,7 @@ const Testimonials = () => {
                     setActiveIndex(index);
                   }}
                   className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
-                    index === activeIndex 
-                      ? "bg-white w-6" 
-                      : "bg-white/40"
+                    index === activeIndex ? "bg-white w-6" : "bg-white/40"
                   }`}
                   aria-label={`Go to testimonial ${index + 1}`}
                 />

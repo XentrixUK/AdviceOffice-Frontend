@@ -26,7 +26,7 @@ const Hero = () => {
                   Making UK systems easier to understand
                 </motion.h1>
                 <motion.p 
-                  className="text-[#F6F6F6] text-[16px] leading-[1.5] sm:text-[18px] sm:leading-[1.6] lg:text-[24px] lg:leading-[39px] font-normal max-w-full sm:max-w-[480px] lg:max-w-[612px]"
+                  className="text-[#F6F6F6] text-[16px] leading-[1.5] sm:text-[18px] sm:leading-[1.6] lg:text-[24px] lg:leading-[39px] font-Avenir max-w-full sm:max-w-[480px] lg:max-w-[612px]"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}

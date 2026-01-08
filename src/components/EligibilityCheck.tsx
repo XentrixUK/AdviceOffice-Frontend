@@ -60,7 +60,7 @@ const EligibilityCheck = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
         >
-          <p className="text-center text-grey-1000 text-[15px] sm:text-[16px] lg:text-[18px] font-medium leading-[1.5]">
+          <p className="text-center text-grey-1000 text-[15px] sm:text-[16px] lg:text-[18px] font-normal leading-[1.5]">
             Answer a few simple questions about your situation. This allows us
             to identify what support may be available and suggest next steps.
           </p>
@@ -80,7 +80,7 @@ const EligibilityCheck = () => {
           size="default"
           className="h-auto sm:h-[59px] py-3 sm:py-0 px-5 sm:px-6 rounded-md gap-2 w-full sm:w-auto max-w-[400px]"
         >
-          <span className="text-[15px] sm:text-lg font-medium leading-[1.5] sm:leading-[27px] text-center">
+          <span className="text-[15px] sm:text-lg leading-[1.5] sm:leading-[27px] text-center">
             Check your eligibility for support
           </span>
           <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0" />

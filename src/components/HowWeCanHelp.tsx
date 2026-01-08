@@ -50,7 +50,7 @@ const HowWeCanHelp = () => {
             <h2 className="text-lavender text-[32px] sm:text-[40px] lg:text-[48px] font-bold leading-[1.4] lg:leading-[67.2px] text-center max-w-[767px]">
               How We Can Help
             </h2>
-            <p className="text-grey-1000 text-[16px] sm:text-[17px] lg:text-[18px] font-medium leading-[1.5] lg:leading-[27px] text-center max-w-[767px] px-2">
+            <p className="text-grey-1000 text-[16px] sm:text-[17px] lg:text-[18px] font-normal leading-[1.5] lg:leading-[27px] text-center max-w-[767px] px-2">
               Lorem ipsum dolor sit amet consectetur. Augue iaculis leo in
               sociis et tortor. Bibendum aliquam ultrices lobortis platea augue
               felis. Quis ultrices fusce etiam hendrerit elit sit eget eu.

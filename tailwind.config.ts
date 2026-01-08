@@ -2,7 +2,12 @@ import type { Config } from "tailwindcss";
 
 export default {
   darkMode: ["class"],
-  content: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
+  content: [
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   prefix: "",
   theme: {
     container: {
@@ -12,23 +17,25 @@ export default {
         "2xl": "1400px",
       },
     },
+    fontFamily: {
+      sans: ["'Avenir'", "'Avenir Next'", "sans-serif"],
+      mono: ["'Avenir'", "'Avenir Next'", "sans-serif"],
+      serif: ["'Avenir'", "'Avenir Next'", "sans-serif"],
+    },
     extend: {
-      fontFamily: {
-        sans: ["'Avenir'", "Avenir Next", "system-ui", "-apple-system", "BlinkMacSystemFont", "sans-serif"],
-      },
       fontSize: {
-        'h1': ['56px', { lineHeight: '140%', fontWeight: '900' }],
-        'h2': ['48px', { lineHeight: '140%', fontWeight: '900' }],
-        'h3': ['34px', { lineHeight: '140%', fontWeight: '900' }],
-        'h4': ['24px', { lineHeight: '140%', fontWeight: '900' }],
-        'h5': ['20px', { lineHeight: '140%', fontWeight: '900' }],
-        'large-heavy': ['18px', { lineHeight: '150%', fontWeight: '800' }],
-        'button': ['18px', { lineHeight: '150%', fontWeight: '800' }],
-        'large-text': ['18px', { lineHeight: '150%', fontWeight: '500' }],
-        'body-heavy': ['16px', { lineHeight: '150%', fontWeight: '800' }],
-        'body': ['16px', { lineHeight: '150%', fontWeight: '500' }],
-        'small-heavy': ['14px', { lineHeight: '150%', fontWeight: '800' }],
-        'small': ['14px', { lineHeight: '150%', fontWeight: '500' }],
+        h1: ["56px", { lineHeight: "140%", fontWeight: "900" }],
+        h2: ["48px", { lineHeight: "140%", fontWeight: "900" }],
+        h3: ["34px", { lineHeight: "140%", fontWeight: "900" }],
+        h4: ["24px", { lineHeight: "140%", fontWeight: "900" }],
+        h5: ["20px", { lineHeight: "140%", fontWeight: "900" }],
+        "large-heavy": ["18px", { lineHeight: "150%", fontWeight: "800" }],
+        button: ["18px", { lineHeight: "150%", fontWeight: "800" }],
+        "large-text": ["18px", { lineHeight: "150%", fontWeight: "500" }],
+        "body-heavy": ["16px", { lineHeight: "150%", fontWeight: "800" }],
+        body: ["16px", { lineHeight: "150%", fontWeight: "500" }],
+        "small-heavy": ["14px", { lineHeight: "150%", fontWeight: "800" }],
+        small: ["14px", { lineHeight: "150%", fontWeight: "500" }],
       },
       colors: {
         border: "hsl(var(--border))",

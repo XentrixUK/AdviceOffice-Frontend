@@ -29,7 +29,7 @@ const OurImpact = () => {
     <section className="w-full">
       <div className="bg-primary-50 px-4 sm:px-8 lg:px-20 pb-12 sm:pb-16 lg:pb-20">
         <div className="max-w-[1280px] mx-auto flex flex-col items-center gap-8 sm:gap-10 lg:gap-14">
-          <motion.div 
+          <motion.div
             className="flex flex-col items-center gap-2 sm:gap-3 lg:gap-4"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -39,7 +39,7 @@ const OurImpact = () => {
             <h2 className="text-primary text-[28px] sm:text-[36px] lg:text-[48px] font-bold leading-[1.4] text-center">
               Our Impact
             </h2>
-            <p className="text-grey-1000 text-[16px] sm:text-[17px] lg:text-[18px] font-medium leading-[1.5] text-center max-w-[320px] sm:max-w-none">
+            <p className="text-grey-1000 text-[16px] sm:text-[17px] lg:text-[18px] font-normal leading-[1.5] text-center max-w-[320px] sm:max-w-none">
               Making a difference in our community
             </p>
           </motion.div>
@@ -52,16 +52,23 @@ const OurImpact = () => {
                 initial={{ opacity: 0, y: 40, scale: 0.95 }}
                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
                 viewport={{ once: true, margin: "-50px" }}
-                transition={{ duration: 0.5, delay: index * 0.1, ease: "easeOut" }}
+                transition={{
+                  duration: 0.5,
+                  delay: index * 0.1,
+                  ease: "easeOut",
+                }}
               >
-                <motion.div 
+                <motion.div
                   className="w-[72px] h-[72px] sm:w-[84px] sm:h-[84px] lg:w-[96px] lg:h-[96px] bg-white rounded-full shadow-[0px_4px_6px_-4px_rgba(0,0,0,0.10)] flex items-center justify-center mb-4 sm:mb-5 lg:mb-6"
-                  whileHover={{ scale: 1.08, boxShadow: "0px 8px 16px -4px rgba(0,0,0,0.15)" }}
+                  whileHover={{
+                    scale: 1.08,
+                    boxShadow: "0px 8px 16px -4px rgba(0,0,0,0.15)",
+                  }}
                   transition={{ duration: 0.25 }}
                 >
                   <stat.icon className="w-8 h-8 sm:w-9 sm:h-9 lg:w-11 lg:h-11 text-lavender" />
                 </motion.div>
-                <motion.span 
+                <motion.span
                   className="text-coral text-[24px] sm:text-[28px] lg:text-[34px] font-bold leading-[1.4] text-center mb-2 sm:mb-3 lg:mb-4"
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}

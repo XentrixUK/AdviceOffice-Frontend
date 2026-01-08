@@ -1,7 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import purpleBg from "@/assets/purplebg.svg";
+import purpleBg from "@/assets/purplebg.png";
 
 const CTASection = () => {
   return (
@@ -27,7 +27,7 @@ const CTASection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="w-full text-center text-white text-[22px] sm:text-[32px] lg:text-[48px] font-black leading-[1.25] sm:leading-tight lg:leading-[67.2px]"
+              className="w-full text-center text-white text-[28px] leading-[1.3] sm:text-[36px] sm:leading-[1.35] lg:text-[56px] lg:leading-[78.4px] font-bold"
               style={{ fontFamily: "Avenir, sans-serif" }}
             >
               Looking for advice? <br className="hidden lg:block" />
@@ -38,7 +38,7 @@ const CTASection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.3 }}
-              className="w-full max-w-[876px] text-center text-white/90 text-[14px] sm:text-lg lg:text-[24px] font-medium leading-[1.6] sm:leading-relaxed lg:leading-8"
+              className="w-full max-w-[876px] text-center text-white/90 text-[14px] sm:text-lg lg:text-[24px] font-normal leading-[1.6] sm:leading-relaxed lg:leading-8"
               style={{ fontFamily: "Avenir, sans-serif" }}
             >
               Free, confidential guidance to help you understand your situation,

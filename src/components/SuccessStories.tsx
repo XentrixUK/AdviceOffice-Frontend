@@ -81,13 +81,13 @@ const SuccessStories = () => {
         className="flex flex-col items-center gap-2 sm:gap-3 max-w-[800px]"
       >
         <h2
-          className="text-center text-primary text-[24px] sm:text-[36px] lg:text-[48px] font-black leading-[1.2] lg:leading-[67.2px]"
+          className="text-center text-primary text-[28px] leading-[1.3] sm:text-[36px] sm:leading-[1.35] lg:text-[56px] lg:leading-[78.4px] font-bold"
           style={{ fontFamily: "Avenir, sans-serif" }}
         >
           Stay Informed: Success stories
         </h2>
         <p
-          className="max-w-[642px] text-center text-grey-1000 text-[15px] sm:text-[18px] font-medium leading-[1.6] sm:leading-[27px] px-2 sm:px-0"
+          className="max-w-[642px] text-center text-grey-1000 text-[15px] sm:text-[18px] font-normal leading-[1.6] sm:leading-[27px] px-2 sm:px-0"
           style={{ fontFamily: "Avenir, sans-serif" }}
         >
           Here are a few examples of how advice and support can help people
@@ -103,11 +103,11 @@ const SuccessStories = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
-            className="flex-1 bg-white rounded-[20px] sm:rounded-[32px] shadow-[0px_4px_20px_-4px_rgba(0,0,0,0.1)] p-5 sm:p-6 lg:p-8 flex flex-col gap-4 sm:gap-5 lg:gap-6 hover:shadow-[0px_8px_30px_-4px_rgba(0,0,0,0.15)] transition-shadow duration-300"
+            className="flex-1 bg-white rounded-[20px] sm:rounded-[32px] shadow-[0px_4px_6px_-1px_rgba(0,0,0,0.15)] p-5 sm:p-6 lg:p-8 flex flex-col gap-6 hover:shadow-[0px_8px_30px_-4px_rgba(0,0,0,0.15)] transition-shadow duration-300"
           >
-            <div className="flex items-center justify-between gap-3">
+            <div className="flex items-start justify-between">
               <div
-                className={`w-11 h-11 sm:w-14 sm:h-14 lg:w-16 lg:h-16 ${story.iconBg} rounded-full flex items-center justify-center shadow-sm`}
+                className={`w-11 h-11 sm:w-14 sm:h-14 lg:w-16 lg:h-16 ${story.iconBg} rounded-full flex items-center justify-center`}
               >
                 <img
                   src={story.icon}
@@ -116,20 +116,19 @@ const SuccessStories = () => {
                 />
               </div>
               <div
-                className={`h-7 sm:h-7 px-3 sm:px-4 rounded-full ${story.tagBg} flex items-center`}
+                className={`h-7 px-4 rounded-full ${story.tagBg} flex items-center justify-center`}
               >
                 <span
-                  className={`text-[12px] sm:text-[14px] leading-5 font-semibold ${story.tagText}`}
+                  className={`text-[14px] leading-5 font-normal ${story.tagText}`}
                   style={{ fontFamily: "Avenir, sans-serif" }}
                 >
                   {story.tag}
                 </span>
               </div>
             </div>
-
             <div className="flex flex-col gap-2 sm:gap-2">
               <h3
-                className={`${story.titleColor} text-[17px] sm:text-[20px] font-black leading-[1.3] sm:leading-[28px]`}
+                className={`${story.titleColor} text-[17px] sm:text-[20px] font-semibold leading-[1.3] sm:leading-[28px]`}
                 style={{ fontFamily: "Avenir, sans-serif" }}
               >
                 {story.title}
@@ -145,7 +144,7 @@ const SuccessStories = () => {
             <div className="mt-auto pt-4 sm:pt-4 border-t border-grey-200 flex items-center gap-2.5">
               <CheckCircle className={`w-5 h-5 ${story.titleColor}`} />
               <span
-                className="text-grey-1000 text-[14px] sm:text-[16px] font-semibold leading-6"
+                className="text-grey-1000 text-[14px] sm:text-[16px] leading-6"
                 style={{ fontFamily: "Avenir, sans-serif" }}
               >
                 {story.highlight}
