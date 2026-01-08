@@ -87,7 +87,7 @@ const SuccessStories = () => {
           Stay Informed: Success stories
         </h2>
         <p
-          className="max-w-[642px] text-center text-grey-1000 text-[15px] sm:text-[18px] font-normal leading-[1.6] sm:leading-[27px] px-2 sm:px-0"
+          className="max-w-[642px] text-center text-grey-1000 text-[18px] sm:text-[18px] font-normal leading-[1.6] sm:leading-[27px] px-2 sm:px-0"
           style={{ fontFamily: "Avenir, sans-serif" }}
         >
           Here are a few examples of how advice and support can help people

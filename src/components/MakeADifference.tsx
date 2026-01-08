@@ -22,7 +22,7 @@ const MakeADifference = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="max-w-[642px] text-center text-[#3D3D3D] text-[15px] sm:text-lg font-normal leading-[1.6] sm:leading-relaxed px-1 sm:px-0"
+          className="max-w-[642px] text-center text-[#3D3D3D] text-[18px] sm:text-lg font-normal leading-[1.6] sm:leading-relaxed px-1 sm:px-0"
           style={{ fontFamily: "Avenir, sans-serif" }}
         >
           Your support helps us provide free, confidential advice on housing,

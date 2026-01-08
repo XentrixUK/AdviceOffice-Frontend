@@ -83,7 +83,7 @@ const Testimonials = () => {
           <h2 className="text-white text-[28px] leading-[1.3] sm:text-[36px] sm:leading-[1.35] lg:text-[48px] lg:leading-[78.4px] font-bold">
             What Our Clients Say
           </h2>
-          <p className="text-white/90 text-[15px] sm:text-lg font-medium leading-relaxed lg:leading-[27px]">
+          <p className="text-white/90 text-[15px] sm:text-lg font-normal leading-relaxed lg:leading-[27px]">
             Real stories from the people we've helped
           </p>
         </motion.div>
