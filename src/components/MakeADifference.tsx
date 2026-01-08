@@ -38,19 +38,19 @@ const MakeADifference = () => {
         >
           <Button
             variant="outline"
-            className="w-full sm:w-auto border-2 border-primary text-primary hover:bg-primary hover:text-white rounded-full px-5 sm:px-6 h-[52px] sm:h-[57px] text-[15px] sm:text-lg font-semibold shadow-sm active:scale-[0.98] transition-all duration-200"
+            className="w-full sm:w-auto border-2 border-primary text-primary hover:bg-primary hover:text-white rounded-full px-5 sm:px-6 h-[52px] sm:h-[57px] text-[15px] sm:text-lg font-normal shadow-sm active:scale-[0.98] transition-all duration-200"
           >
             Become a Volunteer
           </Button>
           <Button
             variant="outline"
-            className="w-full sm:w-auto border-2 border-coral text-coral hover:bg-coral hover:text-white rounded-full px-5 sm:px-6 h-[52px] sm:h-[57px] text-[15px] sm:text-lg font-semibold shadow-sm active:scale-[0.98] transition-all duration-200"
+            className="w-full sm:w-auto border-2 border-coral text-coral hover:bg-coral hover:text-white rounded-full px-5 sm:px-6 h-[52px] sm:h-[57px] text-[15px] sm:text-lg font-normal shadow-sm active:scale-[0.98] transition-all duration-200"
           >
             Partner with Us
           </Button>
           <Button
             variant="outline"
-            className="w-full sm:w-auto border-2 border-lavender text-lavender hover:bg-lavender hover:text-white rounded-full px-5 sm:px-6 h-[52px] sm:h-[57px] text-[15px] sm:text-lg font-semibold shadow-sm active:scale-[0.98] transition-all duration-200"
+            className="w-full sm:w-auto border-2 border-lavender text-lavender hover:bg-lavender hover:text-white rounded-full px-5 sm:px-6 h-[52px] sm:h-[57px] text-[15px] sm:text-lg font-normal shadow-sm active:scale-[0.98] transition-all duration-200"
           >
             Fundraise with us
           </Button>
