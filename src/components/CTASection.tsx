@@ -27,7 +27,7 @@ const CTASection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="w-full text-center text-white text-[28px] leading-[1.3] sm:text-[36px] sm:leading-[1.35] lg:text-[56px] lg:leading-[78.4px] font-bold"
+              className="w-full text-center text-white text-[28px] leading-[1.3] sm:text-[36px] sm:leading-[1.35] lg:text-[48px] lg:leading-[78.4px] font-bold"
               style={{ fontFamily: "Avenir, sans-serif" }}
             >
               Looking for advice? <br className="hidden lg:block" />

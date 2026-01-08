@@ -11,7 +11,7 @@ const MakeADifference = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-center text-primary text-[28px] leading-[1.3] sm:text-[36px] sm:leading-[1.35] lg:text-[56px] lg:leading-[78.4px] font-bold"
+          className="text-center text-primary text-[28px] leading-[1.3] sm:text-[36px] sm:leading-[1.35] lg:text-[48px] lg:leading-[78.4px] font-bold"
           style={{ fontFamily: "Avenir, sans-serif" }}
         >
           Make a Difference Today

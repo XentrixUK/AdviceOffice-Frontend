@@ -81,7 +81,7 @@ const SuccessStories = () => {
         className="flex flex-col items-center gap-2 sm:gap-3 max-w-[800px]"
       >
         <h2
-          className="text-center text-primary text-[28px] leading-[1.3] sm:text-[36px] sm:leading-[1.35] lg:text-[56px] lg:leading-[78.4px] font-bold"
+          className="text-center text-primary text-[28px] leading-[1.3] sm:text-[36px] sm:leading-[1.35] lg:text-[48px] lg:leading-[78.4px] font-bold"
           style={{ fontFamily: "Avenir, sans-serif" }}
         >
           Stay Informed: Success stories

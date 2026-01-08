@@ -80,7 +80,7 @@ const Testimonials = () => {
           transition={{ duration: 0.5 }}
           className="text-center flex flex-col gap-2 sm:gap-3"
         >
-          <h2 className="text-white text-[28px] leading-[1.3] sm:text-[36px] sm:leading-[1.35] lg:text-[56px] lg:leading-[78.4px] font-bold">
+          <h2 className="text-white text-[28px] leading-[1.3] sm:text-[36px] sm:leading-[1.35] lg:text-[48px] lg:leading-[78.4px] font-bold">
             What Our Clients Say
           </h2>
           <p className="text-white/90 text-[15px] sm:text-lg font-medium leading-relaxed lg:leading-[27px]">
